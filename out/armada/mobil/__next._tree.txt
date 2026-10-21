@@ -1,0 +1,8 @@
+:HL["/_next/static/chunks/1t_d8guxd3vve.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&display=swap","style"]
+:HL["/assets/img/site/hero-armada-mobil.webp","image",{"fetchPriority":"high"}]
+:HL["/assets/img/logo-mark.png","image"]
+3:[["children",{"s":"__PAGE__","h":160}]]
+2:[["children",{"s":"mobil","h":96,"c":"$Q3"}]]
+1:[["children",{"s":"armada","h":64,"c":"$Q2"}]]
+0:{"b":"O4UeMgaL9JWXtp7RiM1yX","t":{"t":{"s":"","h":16,"c":"$Q1"}}}

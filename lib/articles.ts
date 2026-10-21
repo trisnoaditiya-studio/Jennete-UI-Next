@@ -1,0 +1,309 @@
+/* Artikel (DRAF: isi hanya memakai fakta yang ada di situs). body = [judul bagian, HTML]; judul kosong = paragraf pembuka. */
+export type Article = {
+  slug: string;
+  kategori: string;
+  date: string; // YYYY-MM-DD
+  img: string;
+  title: string;
+  excerpt: string;
+  body: [string, string][];
+};
+
+export const CATEGORIES = ["Armada", "Tips sewa", "Perusahaan & instansi"];
+
+export const ARTICLES: Article[] = [
+  {
+    "slug": "mobil-listrik-kecil-untuk-perkotaan",
+    "kategori": "Armada",
+    "date": "2026-09-23",
+    "img": "/assets/img/site/blogImg1.jpg",
+    "title": "Mobil listrik kecil untuk mobilitas perkotaan",
+    "excerpt": "City car listrik yang ringkas untuk operasional dalam kota: pilihan unit di armada Jennete Rent dan hal yang perlu dipertimbangkan sebelum menyewa.",
+    "body": [
+      [
+        "",
+        "<p>Untuk perjalanan di dalam kota, seperti kunjungan klien, antar dokumen, atau mobilitas harian tim, kendaraan yang ringkas sering lebih praktis daripada MPV atau SUV. City car listrik menjadi salah satu pilihannya.</p>"
+      ],
+      [
+        "Kapan city car listrik cocok",
+        "<ul><li>Rute sebagian besar di dalam kota dan jarak harian bisa diperkirakan.</li><li>Penumpang sedikit. Unit city car di armada kami berkapasitas 5 kursi.</li><li>Sering parkir di area padat, sehingga ukuran ringkas memudahkan.</li></ul>"
+      ],
+      [
+        "Pilihan di armada Jennete Rent",
+        "<p>Dua city car listrik yang tersedia saat ini:</p><div class=\"tbl\"><table><thead><tr><th>Unit</th><th>Kapasitas</th><th>Penggerak</th><th>Mulai</th></tr></thead><tbody><tr><td>Wuling AIRA EV</td><td>5 kursi</td><td>Listrik 30 kW</td><td>Rp750.000/hari</td></tr><tr><td>BYD Atto 1</td><td>5 kursi</td><td>Baterai 33,8 kWh</td><td>Rp950.000/hari</td></tr></tbody></table></div><p>Butuh kabin lebih besar tetapi tetap listrik? Ada Jaecoo J5 EV, SUV kompak 5 kursi dengan baterai 60,9 kWh, mulai Rp1.250.000/hari. Lihat semua unit di halaman <a href=\"/armada/mobil/listrik/\">mobil listrik</a>.</p>"
+      ],
+      [
+        "Yang perlu dipertimbangkan",
+        "<p>Harga di atas adalah harga harian sebagai acuan. Untuk kontrak bulanan atau tahunan, harga dihitung sesuai jumlah unit dan durasi, lalu dikirim sebagai penawaran resmi.</p><p>Sampaikan juga perkiraan jarak tempuh harian tim Anda saat meminta penawaran, agar tim kami bisa menyarankan unit yang paling sesuai.</p><p class=\"ph-note\">Perlu dilengkapi: informasi pengisian daya (charger, akses SPKLU) dan perkiraan jarak tempuh per unit.</p>"
+      ],
+      [
+        "Sudah termasuk dalam sewa",
+        "<p>Seperti unit lainnya, city car listrik sudah termasuk servis berkala tiap 10.000 km atau 6 bulan, akses bengkel resmi ATPM di seluruh Indonesia, dan bantuan darurat 24/7 di 0888-1111-508.</p>"
+      ]
+    ]
+  },
+  {
+    "slug": "sewa-atau-beli-mobil-operasional",
+    "kategori": "Tips sewa",
+    "date": "2026-10-21",
+    "img": "/assets/img/site/blogImg2.jpg",
+    "title": "Sewa atau beli mobil operasional? Pertimbangan untuk perusahaan",
+    "excerpt": "Lima hal yang biasa dipertimbangkan perusahaan sebelum memutuskan menyewa atau membeli kendaraan dinas dan operasional.",
+    "body": [
+      [
+        "",
+        "<p>Setiap perusahaan yang membutuhkan kendaraan dinas atau operasional akan sampai pada pertanyaan yang sama: lebih baik membeli unit sendiri, atau menyewa? Tidak ada jawaban tunggal. Berikut hal-hal yang biasanya ikut dipertimbangkan.</p>"
+      ],
+      [
+        "1. Modal di awal",
+        "<p>Membeli berarti perusahaan membayar unit di muka atau melalui pembiayaan. Dengan sewa jangka panjang, perusahaan cukup membayar biaya kontrak per periode, tanpa perlu membeli unit sendiri.</p>"
+      ],
+      [
+        "2. Perawatan dan kendala di jalan",
+        "<p>Kendaraan milik sendiri berarti jadwal servis, bengkel, dan penanganan mogok diatur oleh tim internal. Di Jennete Rent, hal ini sudah termasuk dalam kontrak:</p><ul><li>Servis berkala tiap 10.000 km atau 6 bulan, dan tim kami mengingatkan sebelum jadwalnya tiba.</li><li>Bengkel resmi ATPM di seluruh Indonesia.</li><li>Bantuan darurat 24/7, dan tim kami datang ke lokasi.</li></ul>"
+      ],
+      [
+        "3. Fleksibilitas jumlah dan durasi",
+        "<p>Kebutuhan kendaraan bisa berubah mengikuti proyek atau pertumbuhan tim. Kontrak sewa bisa bulanan hingga tahunan, tanpa batas durasi, dan bisa digabung dengan <a href=\"/solusi-bisnis/operasional-sopir/\">layanan sopir</a>.</p>"
+      ],
+      [
+        "4. Administrasi",
+        "<p>Untuk sewa, perusahaan menerima penawaran tertulis yang bisa langsung diproses di internal. Dokumen yang perlu disiapkan tercantum di halaman <a href=\"/bantuan/#dokumen\">Bantuan</a>.</p>"
+      ],
+      [
+        "5. Kapan membeli lebih masuk akal",
+        "<p>Membeli bisa lebih cocok jika perusahaan memang ingin memiliki aset kendaraan dalam jangka sangat panjang dan sudah punya tim yang mengelola armada sendiri.</p><p>Untuk perhitungan biaya dan pajak, diskusikan dengan tim keuangan perusahaan Anda. Kami bisa menyiapkan penawaran sewa sebagai bahan perbandingan.</p>"
+      ],
+      [
+        "Ringkasan",
+        "<div class=\"tbl\"><table><thead><tr><th>Aspek</th><th>Beli</th><th>Sewa di Jennete Rent</th></tr></thead><tbody><tr><td>Modal awal</td><td>Harga unit atau uang muka pembiayaan</td><td>Biaya kontrak per periode</td></tr><tr><td>Servis dan bengkel</td><td>Diatur tim internal</td><td>Termasuk, di bengkel resmi ATPM</td></tr><tr><td>Bantuan darurat</td><td>Diatur sendiri</td><td>Termasuk, 24/7</td></tr><tr><td>Durasi</td><td>Sesuai masa pakai unit</td><td>Bulanan hingga tahunan</td></tr></tbody></table></div>"
+      ]
+    ]
+  },
+  {
+    "slug": "pengadaan-kendaraan-instansi-e-katalog",
+    "kategori": "Perusahaan & instansi",
+    "date": "2026-10-21",
+    "img": "/assets/img/site/blogImg3.jpg",
+    "title": "Pengadaan kendaraan instansi melalui e-Katalog LKPP",
+    "excerpt": "Jennete Rent terdaftar sebagai penyedia di e-Katalog LKPP. Berikut gambaran pengadaan kendaraan dinas dan operasional melalui jalur resmi.",
+    "body": [
+      [
+        "",
+        "<p>Bagi kementerian, lembaga, dan pemerintah daerah, pengadaan kendaraan perlu berjalan melalui jalur resmi. Jennete Rent terdaftar sebagai penyedia di e-Katalog LKPP, sehingga sewa kendaraan bisa diadakan melalui jalur tersebut.</p>"
+      ],
+      [
+        "Apa yang bisa diadakan",
+        "<p>Kendaraan dinas dan operasional, dari SUV, MPV, hingga city car. Pilihan unit bisa dilihat di halaman <a href=\"/armada/mobil/\">armada mobil</a>.</p>"
+      ],
+      [
+        "Durasi dan ketentuan",
+        "<p>Durasi sewa mengikuti paket pengadaan instansi Anda. Ketentuan detail mengikuti penawaran resmi.</p>"
+      ],
+      [
+        "Layanan setelah unit diterima",
+        "<p>Instansi mendapat layanan purna sewa yang sama dengan klien korporat: servis berkala tiap 10.000 km atau 6 bulan, bengkel resmi ATPM di seluruh Indonesia, dan bantuan darurat 24/7.</p>"
+      ],
+      [
+        "Langkah memulai",
+        "<ol><li>Hubungi tim kami untuk informasi produk Jennete Rent di e-Katalog.</li><li>Sampaikan kebutuhan unit, jumlah, dan durasi.</li><li>Proses pengadaan berjalan sesuai ketentuan di instansi Anda.</li></ol><p class=\"ph-note\">Perlu dilengkapi: tautan etalase e-Katalog dan nama produk penyedia.</p>"
+      ]
+    ]
+  },
+  {
+    "slug": "memilih-mpv-untuk-kendaraan-dinas",
+    "kategori": "Armada",
+    "date": "2026-10-07",
+    "img": "/assets/img/site/dtHero.jpg",
+    "title": "Memilih MPV untuk kendaraan dinas dan antar-jemput tim",
+    "excerpt": "MPV 7 kursi menjadi pilihan umum untuk antar-jemput karyawan dan perjalanan dinas. Berikut pilihan di armada Jennete Rent dan cara menentukannya.",
+    "body": [
+      [
+        "",
+        "<p>Saat kendaraan dipakai bergantian oleh beberapa orang, misalnya antar-jemput karyawan, kunjungan proyek, atau perjalanan dinas tim, kapasitas kursi biasanya menjadi pertimbangan pertama. Di sinilah MPV sering dipilih.</p>"
+      ],
+      [
+        "Pilihan MPV di armada kami",
+        "<div class=\"tbl\"><table><thead><tr><th>Unit</th><th>Keterangan</th></tr></thead><tbody><tr><td>Wuling Cortez Darion</td><td>MPV 7 kursi, otomatis</td></tr><tr><td>Toyota Voxy</td><td>MPV 7 kursi untuk operasional</td></tr><tr><td>Honda Odyssey</td><td>MPV nyaman untuk perjalanan jauh</td></tr><tr><td>Toyota Alphard</td><td>MPV premium untuk direksi dan tamu VIP</td></tr></tbody></table></div><p>Daftar lengkap ada di halaman <a href=\"/armada/mobil/\">armada mobil</a>.</p>"
+      ],
+      [
+        "Hal yang perlu ditentukan",
+        "<ul><li>Jumlah penumpang per perjalanan.</li><li>Rute utama: dalam kota atau luar kota.</li><li>Perlu sopir atau dikemudikan karyawan sendiri.</li><li>Durasi sewa: bulanan hingga tahunan.</li></ul>"
+      ],
+      [
+        "Sudah termasuk dalam sewa",
+        "<p>Servis berkala tiap 10.000 km atau 6 bulan, bengkel resmi ATPM di seluruh Indonesia, dan bantuan darurat 24/7 di <a href=\"tel:08881111508\">0888-1111-508</a>.</p>"
+      ]
+    ]
+  },
+  {
+    "slug": "sewa-motor-untuk-tim-lapangan",
+    "kategori": "Armada",
+    "date": "2026-09-30",
+    "img": "/assets/img/site/hero-armada-motor.webp",
+    "title": "Sewa motor untuk tim lapangan dan operasional",
+    "excerpt": "Motor matic dan bebek untuk tim lapangan, kurir internal, atau surveyor. Tersedia sewa mingguan dan bulanan.",
+    "body": [
+      [
+        "",
+        "<p>Untuk pekerjaan yang menuntut banyak kunjungan dalam sehari, seperti survei, penagihan, atau pengiriman dokumen, motor sering lebih efisien daripada mobil.</p>"
+      ],
+      [
+        "Durasi sewa",
+        "<p>Sewa motor tersedia untuk durasi mingguan dan bulanan. Harga mingguan tiap unit tercantum di halaman <a href=\"/armada/motor/\">armada motor</a>.</p>"
+      ],
+      [
+        "Pilihan unit",
+        "<ul><li><b>Matic:</b> Yamaha Aerox 155 VVA, Yamaha Fino 125, Yamaha X-Ride 125, Suzuki NEX II 115 Fi.</li><li><b>Bebek:</b> Yamaha Jupiter MX 150, Yamaha Jupiter Z1 CW 115, Yamaha Vega Force 115 CW.</li></ul>"
+      ],
+      [
+        "Untuk kebutuhan banyak unit",
+        "<p>Sampaikan jumlah unit dan durasi saat meminta penawaran. Tim kami menyiapkan penawaran resmi untuk perusahaan Anda.</p>"
+      ]
+    ]
+  },
+  {
+    "slug": "mobil-premium-untuk-tamu-vip",
+    "kategori": "Armada",
+    "date": "2026-09-09",
+    "img": "/assets/img/site/hero-armada-premium.webp",
+    "title": "Mobil premium untuk direksi, tamu VIP, dan acara perusahaan",
+    "excerpt": "Alphard, Camry, Accord, hingga Palisade: kapan unit premium tepat dipakai dan bagaimana harganya dihitung.",
+    "body": [
+      [
+        "",
+        "<p>Penjemputan tamu penting, kunjungan direksi, atau acara perusahaan sering membutuhkan kendaraan yang mencerminkan citra perusahaan.</p>"
+      ],
+      [
+        "Pilihan unit premium",
+        "<ul><li><b>MPV:</b> Toyota Alphard, Toyota Voxy, Honda Odyssey.</li><li><b>Sedan:</b> Toyota Camry, Honda Accord.</li><li><b>SUV:</b> Hyundai Palisade.</li></ul><p>Lihat semua di halaman <a href=\"/armada/mobil/premium/\">mobil premium</a>.</p>"
+      ],
+      [
+        "Bagaimana harga dihitung",
+        "<p>Harga unit premium tidak dicantumkan karena dihitung sesuai unit, durasi, dan kebutuhan sopir. Tim kami mengirim penawaran resmi setelah Anda menceritakan kebutuhannya.</p>"
+      ],
+      [
+        "Dengan sopir",
+        "<p>Unit premium bisa disewa bersama sopir berpengalaman. Pilih \"Termasuk sopir\" saat meminta penawaran.</p>"
+      ]
+    ]
+  },
+  {
+    "slug": "yang-dilakukan-saat-unit-mogok",
+    "kategori": "Tips sewa",
+    "date": "2026-10-14",
+    "img": "/assets/img/site/svcImg3.jpg",
+    "title": "Unit sewa mogok atau kecelakaan? Ini yang perlu dilakukan",
+    "excerpt": "Langkah singkat saat kendaraan sewa bermasalah di jalan, dan layanan apa saja yang sudah termasuk dalam kontrak.",
+    "body": [
+      [
+        "",
+        "<p>Kendala di jalan bisa terjadi kapan saja. Yang penting, pengemudi tahu langkah pertama yang harus diambil.</p>"
+      ],
+      [
+        "Langkah pertama",
+        "<ol><li>Pastikan pengemudi dan penumpang aman, lalu pindahkan kendaraan ke tempat aman bila memungkinkan.</li><li>Hubungi tim darurat Jennete Rent di <a href=\"tel:08881111508\">0888-1111-508</a>. Layanan ini tersedia 24 jam.</li><li>Sampaikan lokasi dan kondisi kendaraan. Tim kami datang ke lokasi.</li></ol>"
+      ],
+      [
+        "Sudah termasuk dalam kontrak",
+        "<ul><li>Bantuan darurat 24/7.</li><li>Servis berkala tiap 10.000 km atau 6 bulan.</li><li>Bengkel resmi ATPM di seluruh Indonesia.</li></ul><p>Detail layanan ada di halaman <a href=\"/solusi-bisnis/layanan-purna-sewa/\">layanan purna sewa</a>.</p>"
+      ],
+      [
+        "Simpan nomornya",
+        "<p>Simpan nomor darurat di ponsel setiap pengemudi sejak hari pertama unit diterima.</p>"
+      ]
+    ]
+  },
+  {
+    "slug": "sewa-mobil-dengan-sopir-untuk-kantor",
+    "kategori": "Tips sewa",
+    "date": "2026-09-16",
+    "img": "/assets/img/site/hero-pesan.webp",
+    "title": "Sewa mobil dengan sopir: kapan pilihan ini tepat untuk kantor",
+    "excerpt": "Kendaraan plus sopir bisa digabung dengan kontrak jangka panjang. Berikut situasi ketika layanan ini paling membantu.",
+    "body": [
+      [
+        "",
+        "<p>Tidak semua perusahaan punya karyawan yang siap mengemudi setiap hari. Menyewa kendaraan bersama sopir bisa menjadi jalan keluar.</p>"
+      ],
+      [
+        "Situasi yang cocok",
+        "<ul><li>Antar-jemput direksi atau tamu perusahaan.</li><li>Kebutuhan operasional harian kantor.</li><li>Perjalanan dinas dengan rute yang padat.</li></ul>"
+      ],
+      [
+        "Bisa digabung dengan kontrak jangka panjang",
+        "<p>Kendaraan operasional dengan sopir dapat digabung dengan kontrak sewa jangka panjang. Lihat halaman <a href=\"/solusi-bisnis/operasional-sopir/\">kendaraan dan sopir</a>.</p>"
+      ],
+      [
+        "Cara meminta penawaran",
+        "<p>Pilih \"Termasuk sopir\" di <a href=\"/pesan/\">formulir pesan kendaraan</a>, lalu sampaikan jumlah unit dan durasi.</p>"
+      ]
+    ]
+  },
+  {
+    "slug": "dokumen-sewa-kendaraan-perusahaan",
+    "kategori": "Perusahaan & instansi",
+    "date": "2026-09-02",
+    "img": "/assets/img/site/hero-bantuan.webp",
+    "title": "Dokumen yang perlu disiapkan untuk sewa kendaraan perusahaan",
+    "excerpt": "Daftar dokumen untuk perusahaan dan perorangan, agar proses verifikasi berjalan lancar.",
+    "body": [
+      [
+        "",
+        "<p>Sebelum unit diserahkan, tim kami memverifikasi dokumen penyewa. Menyiapkannya sejak awal membuat proses lebih cepat.</p>"
+      ],
+      [
+        "Perusahaan / instansi",
+        "<ul><li>SIUP dan NPWP perusahaan</li><li>Akta pendirian dan SK Kemenkumham</li><li>Tanda daftar perusahaan</li><li>Surat keterangan domisili</li><li>KTP direksi atau pejabat penanggung jawab</li><li>Surat kuasa bila bukan direktur</li><li>SIM pengemudi</li></ul><p>Tim kami juga melakukan survei lokasi domisili.</p>"
+      ],
+      [
+        "Perorangan",
+        "<ul><li>KTP</li><li>Kartu Keluarga (KK)</li><li>SIM</li><li>NPWP</li><li>Bukti tempat tinggal</li></ul>"
+      ],
+      [
+        "Ada pertanyaan?",
+        "<p>Lihat <a href=\"/bantuan/#dokumen\">halaman Bantuan</a> atau hubungi tim kami.</p>"
+      ]
+    ]
+  },
+  {
+    "slug": "kontrak-sewa-jangka-panjang",
+    "kategori": "Perusahaan & instansi",
+    "date": "2026-08-26",
+    "img": "/assets/img/site/svcImg1.jpg",
+    "title": "Cara kerja kontrak sewa jangka panjang untuk perusahaan",
+    "excerpt": "Dari permintaan penawaran hingga unit diterima: gambaran alur sewa bulanan hingga tahunan.",
+    "body": [
+      [
+        "",
+        "<p>Sewa jangka panjang cocok untuk perusahaan yang butuh kendaraan dinas atau operasional secara rutin, tanpa membeli unit sendiri.</p>"
+      ],
+      [
+        "Alurnya",
+        "<ol><li>Sampaikan kebutuhan: unit, jumlah, durasi, dan kebutuhan sopir.</li><li>Tim kami mengirim penawaran resmi.</li><li>Siapkan dokumen perusahaan untuk verifikasi.</li><li>Unit diserahkan sesuai jadwal yang disepakati.</li></ol>"
+      ],
+      [
+        "Durasi",
+        "<p>Kontrak bisa bulanan hingga tahunan, mengikuti kebutuhan perusahaan Anda.</p>"
+      ],
+      [
+        "Selama masa sewa",
+        "<p>Servis berkala, bengkel resmi ATPM, dan bantuan darurat 24/7 sudah termasuk. Lihat halaman <a href=\"/solusi-bisnis/sewa-jangka-panjang/\">sewa jangka panjang</a>.</p>"
+      ]
+    ]
+  }
+];
+
+const BULAN = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+export const fdate = (d: string) => `${parseInt(d.slice(8))} ${BULAN[parseInt(d.slice(5, 7)) - 1]} ${d.slice(0, 4)}`;
+export const sortedArticles = () => [...ARTICLES].sort((a, b) => b.date.localeCompare(a.date));
+export const getArticle = (slug: string) => ARTICLES.find((a) => a.slug === slug);
+export const headingId = (t: string) => t.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+export const wordCount = (a: Article) => a.body.map(([, b]) => b).join(" ").replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length;
+
+/* artikel lain: kategori sama dulu (maks 3), lalu kategori lain */
+export function related(a: Article) {
+  const others = ARTICLES.filter((o) => o.slug !== a.slug).sort((x, y) => y.date.localeCompare(x.date));
+  const same = others.filter((o) => o.kategori === a.kategori).slice(0, 3);
+  return [...same, ...others.filter((o) => o.kategori !== a.kategori).slice(0, 3 - same.length)];
+}
